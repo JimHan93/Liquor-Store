@@ -8,74 +8,79 @@ header {
     font-family: Impact, calibri, fantasy;
     -webkit-text-stroke: 1px darkolivegreen;
     font-weight: bold;
-    font-size:xx-large;
+    font-size: xx-large;
     display: flex;
-    letter-spacing:5px;
+    letter-spacing: 5px;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-color:darkolivegreen;
-    border-width:10px 0px 10px 0px;
-    border-style:solid;
+    border-color: darkolivegreen;
+    border-width: 10px 0px 10px 0px;
+    border-style: solid;
 }
 
-nav{
-    position:absolute;
-    width:150px;
-    left:88%;
-    margin-top:150px;
-    margin-right:20px;
-    border:solid darkolivegreen;
+nav {
+    position: absolute;
+    width: 150px;
+    left: 88%;
+    margin-top: 150px;
+    margin-right: 20px;
+    border: solid darkolivegreen;
     border-width: 5px 5px 5px 5px;
     border-radius: 30px;
 }
 
-.nav:link{
-    font-family:courier;
-    font-size:12px;
+.nav:link {
+    font-family: courier;
+    font-size: 12px;
     font-weight: bold;
-    color:black;
-    text-decoration-line:none;
+    color: black;
+    text-decoration-line: none;
 }
 
-.nav:visited{
-    text-decoration:none;
-    color:black;
+.nav:visited {
+    text-decoration: none;
+    color: black;
 }
 
-.nav:hover{
-    background-color:black;
-    color:white;
+.nav:hover {
+    background-color: black;
+    color: white;
 }
 
-.nav:active{
-    text-decoration:none;
-    color:black;
+.nav:active {
+    text-decoration: none;
+    color: black;
 }
 
-iframe{
-    position:absolute;
+iframe {
+    position: absolute;
     border: none;
     left: 40%;
-    margin-top:150px;
+    margin-top: 150px;
     align-items: center;
-    width:50%;
-    height:75%;
+    width: 50%;
+    height: 75%;
 }
 
-#home{
-    width:300px;
+#home {
+    width: 300px;
     height: 300px;
-    justify-content:center;
+    justify-content: center;
 }
 
-.gridimg{
-    width:80px;
-    height:80px;
+.gridimg {
+    width: 80px;
+    height: 80px;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.order {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
