@@ -12,7 +12,7 @@
 <body>
     <section class="order">
         <p>Wine</p>
-        <select size="1">
+        <select class="select" size="1">
             <option> </option>
             <option value="High Road Cellars Cabernet Merlot">High Road Cellars Cabernet Merlot</option>
             <option value="J. Lohr Seven Oaks Cabernet Sauvignon">J. Lohr Seven Oaks Cabernet Sauvignon</option>
@@ -21,10 +21,10 @@
             <option value="Kilikanoon Killerman's Run Shiraz">Kilikanoon Killerman's Run Shiraz</option>
             <option value="Beronia Elaboracion Especial Tempranillo">Beronia Elaboracion Especial Tempranillo</option>
         </select>
-        <input maxlength="3" type="text">
-        <button onclick="alert('Thank you for your order')">Order Now</button>
+        <input class="text" type="text" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        <button class="btn" onclick="alert('Thank you for your order')">Order Now</button>
         <p>Whiskey</p>
-        <select size="1">
+        <select class="select" size="1">
             <option> </option>
             <option value="Jameson Irish Whiskey">Jameson Irish Whiskey</option>
             <option value="The Sexton Single Malt Irish Whiskey">The Sexton Single Malt Irish Whiskey</option>
@@ -33,11 +33,10 @@
             <option value="Ardbeg 10 Year Old Islay Scotch Whiskey">Kilikanoon Killerman's Run Shiraz</option>
             <option value="Jack Daniel's Tennessee Whiskey">Jack Daniel's Tennessee Whiskey</option>
         </select>
-        <input maxlength="3" type="text">
-        <button onclick="alert('Sorry for not fulfilling your order')">Cancel</button>
-        </section>
+        <input class="text" type="text" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        <button class="btn" type="reset" onclick="alert('Sorry for not fulfilling your order'), window.location.reload()">Cancel</button>
         <p>International</p>
-        <select size="1">
+        <select class="select" size="1">
             <option> </option>
             <option value="Jinro Chamisul Fresh">Jinro Chamisul Fresh</option>
             <option value="Andong Soju">Andong Soju</option>
@@ -46,7 +45,7 @@
             <option value="Hibiki Harmony">Hibiki Harmony</option>
             <option value="Poli Grappa di Sassicaia">Poli Grappa di Sassicaia</option>
         </select>
-        <input maxlength="3" type="text">
+        <input class="text" type="text" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
     </section>
 </body>
 
